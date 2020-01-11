@@ -1,0 +1,22 @@
+{
+  "name": "Daily Planner",
+  "description": "A daily to-do list.",
+  "manifest_version": 2,
+  "version": "1.0",
+  "icons": { 
+    "80":"images/icons8-schedule-80.png" 
+  },
+  "browser_action": {
+    "default_popup": "popupHome.html",
+    "default_icon": "images/icons8-schedule-80.png"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      }
+    }
+  },
+  "permissions": ["storage"]
+}
