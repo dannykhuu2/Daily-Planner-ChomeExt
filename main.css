@@ -1,0 +1,66 @@
+.form-container
+{
+    min-width: 150px;
+    min-height: 250px;
+    background-color: #192841;
+    color: whitesmoke;
+    font-family: Helvetica;
+}
+
+.form-container #title
+{
+    font-size: 15px;
+    text-align: center;
+}
+
+.form-container h2
+{
+    text-align: center;
+    color: whitesmoke;
+}
+.form-popup{
+    display:none;
+    position:fixed;
+    min-height: 250px;
+    min-width: 210px;
+    bottom:0;
+    right:5px;
+    border: 1px solid lightgray;
+    z-index: 100;
+}
+.form-container #textinput
+{
+    text-align: center;
+}
+
+.form-container input
+{
+    min-width: 180px;
+    min-height: 20px;
+    font-size: 15px;
+}
+
+.form-container button
+{
+    width: 25%;
+    height: 25%;
+    background-color: whitesmoke;
+    border-color: grey;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.form-container#Day
+{
+    min-width: 80%;
+}
+.form-container label
+{
+    font-size: 15px;
+}
+
+#Day
+{
+    height: 25px;
+    font-size: 15px;
+}
