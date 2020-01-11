@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+       <link rel="stylesheet" type="text/css" href="mainHome.css"> 
+       <link rel="stylesheet" type="text/css" href="main.css">
+       <link rel="stylesheet" type="text/css" href="about.css">
+
+    </head>
+
+    <body>
+
+        <div class="header">
+            <img src="images/icons8-help-80.png" alt="about" id="helpImg" style="width:32px;height:32px;border:0;">
+            <h2 id="editLabel">Edit Mode</h2>
+            <h2>Schedule</h2>
+        </div>
+
+        <!-- About Page -->
+        <div id="about">
+            <div id="header">
+                <h2>About</h2>
+                <a href="popupHome.html" >&times;</a>
+                <br><br>
+            </div>
+            <p>Extension to manage your schedule for the week. <br><br> </p>
+
+            <div id="iconcontainer">
+                <img src="images/icons8-home-80.png" class="icons"><div class="info">Returns to the schedule for the current day.</div><br>
+                <img src="images/icons8-broom-80.png" class="icons"><div class="info">Deletes all completed tasks.</div><br>
+                <img src="images/icons8-edit-80.png" class="icons"><div class="info">Edits a selected task.</div><br>
+                <img src="images/icons8-plus-80.png" class="icons"><div class="info">Adds a new task to the schedule.</div><br>
+            </div>
+
+            <br>
+            <p id="credit">Icons from https://icons8.com</p>
+        </div>
+
+        <!-- Side Bar With Days -->
+        <div class="sidenav">
+            <p id="Monday">Monday</p>
+            <p id="Tuesday">Tuesday</p>
+            <p id="Wednesday">Wednesday</p>
+            <p id="Thursday">Thursday</p>
+            <p id="Friday">Friday</p>
+            <p id="Saturday">Saturday</p>
+            <p id="Sunday">Sunday</p>
+        </div>
+
+        <!-- Content is added here. -->
+        <div id="main">
+        </div>
+
+        <!-- Form to add an event. -->
+        <div class="content">
+            <div class="form-popup" id="textinput">
+            <form class="form-container">
+                <h2>Schedule Manager</h2>
+                <hr>
+
+                <br>
+                <label>Day</label>
+                <select id="Day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+
+                <br><br>
+
+                <input type="text" id="Title" placeholder="Title"><br><br>
+                <input type="text" id="Description" placeholder="Description"><br><br><br>
+
+                <button type="button" class="btn" id="Add">Add</button>
+                <button type="button" class="btn cancel" id="btnCan">Close</button>
+            </form>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="form-popup" id="editinput">
+            <form class="form-container">
+                <h2>Edit Scheduler</h2>
+
+                <select id="DayEdit">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+
+                <br><br>
+
+                <input type="text" id="TitleEdit" placeholder="Title"><br><br>
+                <input type="text" id="DescriptionEdit" placeholder="Description"><br><br>
+
+                <button type="button" class="btn" id="saveEdit">Save</button>
+                <button type="button" class="btn" id="btnCanEdit">Close</button>
+            </form>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <a href="popupHome.html" >
+                <img src="images/icons8-home-80.png" alt="calendar" class="iconImage" id="calendarImg" style="width:38px;height:38px;border:0;">
+            </a>
+            <img src="images/icons8-broom-80.png" id="deleteCompleted" class="iconImage" style="width:38px;height:38px;border:0;">
+            <img src="images/icons8-edit-80.png" alt="editCalendar" class="iconImage" id="settingsImg" style="width:38px;height:38px;border:0;">
+            <img src="images/icons8-plus-80.png" alt="add" class="iconImage" id="addImg" style="width:38px;height:38px;border:0;">
+        </div>
+
+        <script src="home.js"></script>
+        <script src="popup.js"></script>
+
+    </body>
+
+</html>
