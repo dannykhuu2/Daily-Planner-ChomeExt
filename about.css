@@ -1,0 +1,60 @@
+#about
+{
+    display: none;
+    font-size: 13px;
+    font-family: Helvetica;
+    white-space: normal;
+    height: 424px;
+    width: 400px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#about h2
+{
+    float: left;
+    color:whitesmoke;
+}
+#about p
+{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 20px;
+    color: whitesmoke;
+}
+#header a
+{
+    float: right;
+    color: whitesmoke;
+    text-decoration: none;
+    padding-right: 15px;
+    font-size: 20px;
+}
+.icons
+{
+    cursor: pointer;
+    float: left !important;
+    margin-left: 6%;
+    width: 40px;
+    height: 40px;
+}   
+
+#iconcontainer
+{
+    width: 300px;
+} 
+
+.info 
+{
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: text-bottom;
+    margin-left: 70px;
+    text-align: left !important;
+    color: whitesmoke;
+}
+#credit
+{
+    font-size: 11px !important;
+}
